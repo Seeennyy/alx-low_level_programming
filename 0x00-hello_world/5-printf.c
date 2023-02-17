@@ -3,7 +3,7 @@
 /**
  * main - prints "with proper grammar, but the outcome is a piece of art,"
  * followed newline 
- * Return:0.
+ * Retrun always 0 (done)
  */
 
 int main(void)
