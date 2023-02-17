@@ -2,8 +2,7 @@
 #include <unistd.h>
 /**
  * main - prints "and that piece of art is useful" - Dora Korpar, 2015-10-19"
- * 
- * Retrun: 1.
+ * Retrun 1 (Success)
  */
 int main(void)
 
