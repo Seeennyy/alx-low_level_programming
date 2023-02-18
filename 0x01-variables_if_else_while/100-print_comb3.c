@@ -16,7 +16,7 @@ int main(void)
 {
 	if (p != d)
 {
-	putchar(d);	
+	putchar(d);
 	putchar(d);
 if (d == '8' && p == '9')
 continue;
