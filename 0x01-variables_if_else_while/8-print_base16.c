@@ -8,15 +8,16 @@
 
 int main(void)
 {
-        int d;
-        char x;
-        for (d = '0'; d <= 9; d++)
-        putchar(d);
+	int d;
+	char x;
 
-        for (x ='a'; x <= 'f'; x++)
-        putchar(x);
-        putchar('\n');
+	for (d = '0'; d <= '9'; d++)
+	putchar(d);
 
-        return (0);
+	for (x ='a'; x <= 'f'; x++)
+	putchar(x);
+	putchar('\n');
+
+	return (0);
 }
 
