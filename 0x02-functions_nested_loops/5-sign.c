@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - determine if the number 
+ * print_sign - determine if the number
  * greater, less, or equal zero
  *
  *@n: An integer
@@ -11,7 +11,7 @@
 int print_sign(int n)
 {
 	if (n > 0)
-	{ 
+	{
 		_putchar(43);
 		return (1);
 	}
@@ -20,9 +20,9 @@ int print_sign(int n)
 		_putchar (48);
 		return (0);
 	}
-	else 
+	else
 	{
 		_putchar (45);
 		return (-1);
-	}	
+	}
 }
