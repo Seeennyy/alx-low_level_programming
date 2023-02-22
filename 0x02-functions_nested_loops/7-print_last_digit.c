@@ -6,6 +6,7 @@
  *
  * Return: the last digit
  */
+
 int print_last_digit(int x)
 {
 	int y;
@@ -14,11 +15,11 @@ int print_last_digit(int x)
 	if (y < 0)
 	{
 		_putchar(-y + 48);
-		retrun (-y);
+		return (-y);
 	}
 	else
 	{
 		_putchar(y + 48);
-		retrun (y);
+		return (y);
 	}
 }
