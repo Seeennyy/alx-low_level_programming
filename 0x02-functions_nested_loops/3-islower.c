@@ -3,6 +3,8 @@
  * _islower - Shows 1 when the arg is a lowercase char,
  * if it is not, it shows 0
  *
+ *@c: A char in ASCII code
+ *
  * Return: 1 for lowercase char. 0 for the rest
  */
 int _islower(int c)
