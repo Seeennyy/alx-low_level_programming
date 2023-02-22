@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point 
+ * main - Entry point
  * Description: 'prints _putchar to stout'
  * Return: always 0
  */
@@ -16,5 +16,5 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-return 0;
+return (0);
 }
