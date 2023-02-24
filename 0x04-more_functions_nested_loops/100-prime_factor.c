@@ -20,9 +20,9 @@ x = 2;
 a /= 2;
 }
 
-for (y = 3; y <= sqrt(n); y += 2)
+for (y = 3; y <= sqrt(a); y += 2)
 {
-while (a % i == 0)
+while (a % y == 0)
 {
 x = y;
 a /= y;
