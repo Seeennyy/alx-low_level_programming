@@ -18,12 +18,12 @@ int x, y;
 
 for (y = 1; y <= size; y++)
 {
-for (x = i; x < size; x++)
+for (x = y; x < size; x++)
 {
 _putchar(' ');
 }
 
-for (x = 1; x <= i; x++)
+for (x = 1; x <= y; x++)
 {
 _putchar('#');
 }
