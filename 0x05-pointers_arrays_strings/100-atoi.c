@@ -8,11 +8,11 @@
 
 int _atoi(char *s)
 {
-	int x, d, n, len, f, digit;
+	int x, y, z, len, f, digit;
 
 	x = 0;
-	d = 0;
-	n = 0;
+	y = 0;
+	z = 0;
 	len = 0;
 	f = 0;
 	digit = 0;
@@ -23,14 +23,14 @@ int _atoi(char *s)
 	while (x < len && f == 0)
 	{
 		if (s[x] == '-')
-			++d;
+			++y;
 
 		if (s[x] >= '0' && s[x] <= '9')
 		{
 			digit = s[x] - '0';
-			if (d % 2)
+			if (y % 2)
 				digit = -digit;
-			n = n * 10 + digit;
+			z = z * 10 + digit;
 			f = 1;
 			if (s[x + 1] < '0' || s[x + 1] > '9')
 				break;
@@ -42,6 +42,6 @@ int _atoi(char *s)
 	if (f == 0)
 		return (0);
 
-	return (n);
+	return (z);
 }
 
