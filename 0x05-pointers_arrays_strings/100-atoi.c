@@ -5,44 +5,43 @@
  * @s: striing
  * Return: integer
  */
+
 int _atoi(char *s)
 {
-int x, y, z, l, m, d;
+	int i, d, n, len, f, digit;
 
-	x = 0;
-	y = 0;
-	z = 0;
-	l = 0;
-	m = 0;
+	i = 0;
 	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
 
-	while (s[l] != '\0')
-		l++;
+	while (s[len] != '\0')
+		len++;
 
-	while (x < l && m == 0)
+	while (i < len && f == 0)
+	{
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-		if (s[x] == '-')
-			++y;
-
-		if (s[x] >= '0' && s[x] <= '9')
-		{
-			d = s[x] - '0';
-		if (y % 2)
-				d = -d;
-			z = z * 10 + d;
-			m = 1;
-		if (s[x + 1] < '0' || s[x + 1] > '9')
-		{
-			break;
-			m = 0;
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
 		}
-		}
-		x++;
-		}
+		i++;
+	}
 
-		if (m == 0)
-	return (0);
+	if (f == 0)
+		return (0);
 
-	return (z);
+	return (n);
 }
 
