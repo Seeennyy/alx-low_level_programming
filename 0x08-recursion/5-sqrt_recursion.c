@@ -8,15 +8,6 @@ int actual_sqrt_recursion(int n, int i);
  * Return: the resulting root of square
  */
 
-/**
- * actual_sqrt_recursion - find the natural
- * square root of a number
- * @n: number to calculate the sqaure root of
- * @i: our itr.
- *
- * Return: the resulting square root
- */
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -25,6 +16,14 @@ int _sqrt_recursion(int n)
 }
 
 int actual_sqrt_recursion(int n, int i)
+	/**
+ * actual_sqrt_recursion - find the natural
+ * square root of a number
+ * @n: number to calculate the sqaure root of
+ * @i: our itr.
+ *
+ * Return: the resulting square root
+ */
 {
 	if (i * i > n)
 		return (-1);
